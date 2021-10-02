@@ -1,0 +1,195 @@
+:root{
+    --main-collor-dark: #202C39;
+    --main-collor: #283845;
+    --light-collor: #B8B08D;
+    --second-collor: #F2D492;
+    --second-collor-orange: #F29559;
+}
+body{
+    font-family:  Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: var(--main-collor-dark);
+    background-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+/* Navbar */
+.navbar{
+    background-color: var(--main-collor-dark);
+}
+.navbar-brand{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+.navbar-nav .nav-item .nav-link{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--second-collor);
+    padding: 5px, 0;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    color: var(--second-collor);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--second-collor-orange);
+    transition: width 1s ease-in-out;
+    transform: scale(0);
+}
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+
+/* landing page */
+.home{
+    min-height: 100vh;
+    padding: 15px 0;
+}
+.hero-text h1{
+    color: var(--main-collor-dark);
+    font-size: 48px;
+    font-weight: 850;
+}
+.hero-text p{
+    color: var(--main-collor-dark);
+    font-weight: 400;
+}
+.hero-text button{
+    background-color: var(--second-collor-orange);
+    border-radius: 0;
+    padding: 7px 50px;
+    color: var(--main-collor-dark);
+}
+.hero-text button:hover{
+    background-color: var(--main-collor-dark);
+    color: var(--second-collor-orange);
+}
+.hero-img img{
+    max-width: 100%;
+   
+}
+
+/* feature */
+
+.feature{
+    margin-top: 50px;
+    margin-bottom: 180px;
+}
+.feature .container h2{
+    margin-bottom: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-collor-dark);
+}
+.box-feature{
+    padding: 20px 20px;
+    height: 150px;
+}
+.box-feature:hover{
+    background-color: var(--main-collor);
+    color: var(--second-collor);
+}
+.box-feature h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+/* location */
+
+.location{
+    margin-top: 50px;
+    padding: 50px 0;
+    color: black;
+    position: relative;
+    overflow:hidden;
+    
+}
+.location .container h2{
+    margin-bottom: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-collor-dark);
+    
+} 
+.hero-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+   
+}
+.mapouter .gmap_canvas{
+    max-width: 350px;
+    max-height: 350px;
+}
+.location .container .row .col-sm-7{
+    padding-left: 50px;
+}
+
+/* Contact */
+.contact{
+    margin-top: 50px;
+}
+.contact .container h2{
+    margin-bottom: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-collor-dark);
+    
+}
+.contact-btn button{
+    background-color: var(--second-collor-orange);
+    border-radius: 0;
+    padding: 7px 50px;
+    color: var(--main-collor-dark);
+}
+.contact-btn button:hover{
+    background-color: var(--main-collor-dark);
+    color: var(--second-collor-orange);
+} 
+/* footer */
+.footer{
+    color: var(--main-collor-dark);
+    margin-top: 50px;
+    background-color: var(--second-collor);
+    padding: 50px 0 0 0;
+}
+.footer .container .row .col-sm-3 h4{
+    font-size: 24px;
+    font-weight: 670;
+}
+.input-group-append button{
+    background-color: var(--second-collor-orange);
+    border-radius: 0;
+    color: var(--main-collor-dark);
+}
+.input-group-append button:hover{
+    background-color: var(--main-collor-dark);
+    color: var(--second-collor-orange);
+}
+.footer footer{
+    margin-top: 50px;
+}
